@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		03AAFB8224279E0B0068FB1E /* algorithm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AAFB7824279E0B0068FB1E /* algorithm.framework */; };
-		03AAFB8724279E0B0068FB1E /* algorithmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AAFB8624279E0B0068FB1E /* algorithmTests.swift */; };
 		03AAFB8924279E0B0068FB1E /* algorithm.h in Headers */ = {isa = PBXBuildFile; fileRef = 03AAFB7B24279E0B0068FB1E /* algorithm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03AAFB9524279F970068FB1E /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AAFB9424279F970068FB1E /* BinarySearch.swift */; };
+		03AAFB972427A7820068FB1E /* BinarySearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AAFB962427A7820068FB1E /* BinarySearchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +28,9 @@
 		03AAFB7B24279E0B0068FB1E /* algorithm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = algorithm.h; sourceTree = "<group>"; };
 		03AAFB7C24279E0B0068FB1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03AAFB8124279E0B0068FB1E /* algorithmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = algorithmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		03AAFB8624279E0B0068FB1E /* algorithmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = algorithmTests.swift; sourceTree = "<group>"; };
 		03AAFB8824279E0B0068FB1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03AAFB9424279F970068FB1E /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
+		03AAFB962427A7820068FB1E /* BinarySearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				03AAFB7B24279E0B0068FB1E /* algorithm.h */,
 				03AAFB7C24279E0B0068FB1E /* Info.plist */,
+				03AAFB9424279F970068FB1E /* BinarySearch.swift */,
 			);
 			path = algorithm;
 			sourceTree = "<group>";
@@ -80,8 +83,8 @@
 		03AAFB8524279E0B0068FB1E /* algorithmTests */ = {
 			isa = PBXGroup;
 			children = (
-				03AAFB8624279E0B0068FB1E /* algorithmTests.swift */,
 				03AAFB8824279E0B0068FB1E /* Info.plist */,
+				03AAFB962427A7820068FB1E /* BinarySearchTests.swift */,
 			);
 			path = algorithmTests;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03AAFB9524279F970068FB1E /* BinarySearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03AAFB8724279E0B0068FB1E /* algorithmTests.swift in Sources */,
+				03AAFB972427A7820068FB1E /* BinarySearchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +396,7 @@
 		03AAFB9024279E0B0068FB1E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QJA2WU2RRL;
 				INFOPLIST_FILE = algorithmTests/Info.plist;
@@ -410,6 +415,7 @@
 		03AAFB9124279E0B0068FB1E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QJA2WU2RRL;
 				INFOPLIST_FILE = algorithmTests/Info.plist;
